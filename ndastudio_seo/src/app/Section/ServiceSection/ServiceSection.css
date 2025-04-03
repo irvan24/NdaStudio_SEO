@@ -1,0 +1,239 @@
+/* ------------------- Section principale ------------------- */
+.services-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  padding-left: 300px;
+  padding-right: 300px;
+  grid-row-gap: 54px;
+  min-height: 10vh;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.services-section-title {
+  font-size: 4rem;
+  color: black;
+}
+
+/* ------------------- Conteneur principal ------------------- */
+.services-container {
+  position: relative; /* Pour contenir les éléments positionnés en absolu */
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border: 4px solid #0073E6;
+  text-align: left;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+/* ------------------- Contenu texte ------------------- */
+.services-content h3 {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.card-title,
+.list-text {
+  color: black;
+}
+
+.services-content p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.services-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-content ul li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* ------------------- Images flottantes ------------------- */
+.floating-images {
+  position: absolute;
+  bottom: -30px; /* Descend les images */
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column; /* Empilement vertical par défaut */
+  align-items: flex-end;
+}
+
+.floating-images .img {
+  width: 120px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Effets de rotation pour dynamiser l'affichage */
+.img1 {
+  transform: rotate(8deg) translateY(20px);
+}
+.img2 {
+  transform: rotate(-5deg) translateY(10px);
+}
+.img3 {
+  transform: rotate(12deg) translateY(0);
+}
+
+/* Hover sur les images */
+.floating-images .img:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------- Bouton d'appel à l'action ------------------- */
+.cta-button-services {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border-radius: 30px;
+  background-color: #0073E6;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border: none;
+  max-height: 48px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ------------------- Grille des services ------------------- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 50px auto 0;
+  padding: 20px;
+}
+
+/* ------------------- Cartes de service ------------------- */
+.service-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Icônes avec cercle */
+.service-icon {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Taille du cercle */
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(0, 115, 230, 0.15); /* Fond léger bleu */
+  color: #0073E6;
+  margin: 0 auto 15px;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover sur l'icône */
+.service-card:hover .service-icon {
+  background: rgba(0, 115, 230, 0.3);
+  transform: scale(1.1);
+}
+
+/* Titres des services */
+.service-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: black;
+}
+
+/* Descriptions des services */
+.service-description {
+  font-size: 1rem;
+  color: #787878;
+  line-height: 1.5;
+}
+
+/* Hover sur la carte */
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 115, 230, 0.15);
+}
+
+/* ==================== Media Queries Responsive ==================== */
+
+/* Écrans moyens (tablettes, max-width: 1024px) */
+@media (max-width: 1024px) {
+  .services-section {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+/* Mobiles et petits écrans (max-width: 768px) */
+@media (max-width: 768px) {
+  .services-section {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .services-grid {
+    margin-top: 30px;
+    gap: 20px;
+    padding: 15px;
+  }
+  .floating-images {
+    bottom: -20px;
+    right: 10px;
+    flex-direction: row;  /* Passage à un alignement horizontal */
+    justify-content: center;
+  }
+  .floating-images .img {
+    width: 80px; /* Réduction de la taille des images */
+  }
+}
+
+/* Très petits écrans (max-width: 480px) */
+@media (max-width: 480px) {
+  .services-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .services-section-title {
+    font-size: 3rem;
+  }
+  .services-container {
+    padding: 20px;
+    min-height: auto;
+  }
+  .floating-images {
+    display: none; /* Masquer les images flottantes pour éviter l'encombrement */
+  }
+  .services-grid {
+    gap: 15px;
+    padding: 10px;
+    grid-template-columns: 1fr;  /* Affichage en colonne */
+  }
+}

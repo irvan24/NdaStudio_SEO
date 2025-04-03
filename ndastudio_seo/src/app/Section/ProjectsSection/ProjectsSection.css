@@ -1,0 +1,106 @@
+.project-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-left: 300px;
+  padding-right: 300px;
+  grid-row-gap: 24px;
+  min-height: 10vh;
+}
+
+.project-header {
+    flex-direction: column;
+    grid-row-gap: 24px;
+}
+
+.section-title-black {
+  color: black;
+}
+
+.section-title {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: left;
+  color: #0073E6;
+  margin-bottom: 24px;
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.section-subtitle-view {
+  width: 100%;
+  text-align: left;
+}
+
+.projects-view {
+  display: flex;
+  width: 100%;
+}
+
+.separator {
+  width: 100%;
+  height: 2px;
+  background-color: #e7e7e7;
+  border: none;
+  margin-bottom: 24px;
+}
+
+/* Grid container */
+.projects-grid {
+  display: flex; /* Change la grille en flexbox */
+  padding-top: 20px;
+  padding-bottom: 40px;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si besoin */
+  gap: 20px; /* Espacement entre les éléments */
+  align-items: flex-start; /* Aligne les éléments en haut */
+  width: 100%;
+}
+
+/* Card contenant la vidéo */
+.project-video-card {
+  height: 250px;
+  width: 250px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #1a1a1a;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Vidéo */
+.project-video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Overlay avec titre */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Effet hover */
+.project-video-card:hover {
+  transform: scale(1.05);
+}
+
+.project-title-text {
+  margin-top: 10px;
+
+  color: black;
+}
