@@ -71,11 +71,7 @@ export default function ServiceSection() {
         </div>
 
         {/* Images flottantes */}
-        <div className="floating-images">
-          <img src="/google-maps.png" alt="Google Maps" className="img img1" />
-          <img src="/business-profile.png" alt="Business Profile" className="img img2" />
-          <img src="/seo-growth.png" alt="SEO Growth" className="img img3" />
-        </div>
+       
       </div>
 
       {/* 📌 Ajout de la grille des services Google My Business */}
