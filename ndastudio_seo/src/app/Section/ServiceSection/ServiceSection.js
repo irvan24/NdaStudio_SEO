@@ -49,24 +49,24 @@ export default function ServiceSection() {
       {/* 📌 Section principale - Création et Optimisation de Fiches Google */}
       <div className="services-container">
         <div className="services-content">
-          <h3 className="card-title">📈 Création et Optimisation de Fiches Google</h3>
+          <h3 className="card-title">Création et Optimisation de Fiches Google</h3>
           <p>
             Boostez votre présence en ligne avec une fiche Google My Business parfaitement optimisée.  
             Augmentez votre visibilité locale et attirez plus de clients !
           </p>
           <ul>
             <li className="list-text">
-              ✅ <strong>Création de votre fiche :</strong> Mise en place complète et optimisée.
+              ✅ <strong>Création de votre fiche</strong>
             </li>
             <li className="list-text">
-              ✅ <strong>Optimisation SEO :</strong> Maximisez votre classement sur Google Maps.
+              ✅ <strong>Optimisation SEO</strong>
             </li>
             <li className="list-text">
-              ✅ <strong>Gestion des avis :</strong> Améliorez votre réputation et crédibilité.
+              ✅ <strong>Gestion des avis</strong>
             </li>
           </ul>
           <button className="cta-button-services">
-            <a className="cta-button-text">Créer ou améliorer ma fiche Google</a>
+            <a className="cta-contact-button-text">Nous contacter</a>
           </button>
         </div>
 

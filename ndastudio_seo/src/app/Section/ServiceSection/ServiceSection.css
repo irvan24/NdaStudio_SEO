@@ -20,13 +20,14 @@ h2 {
 .services-section-title {
   font-size: 4rem;
   color: black;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* ------------------- Conteneur principal ------------------- */
 .services-container {
   position: relative; /* Pour contenir les éléments positionnés en absolu */
   margin: 0 auto;
-  background: #fff;
+  background: #0073E6;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -37,20 +38,25 @@ h2 {
 }
 
 /* ------------------- Contenu texte ------------------- */
-.services-content h3 {
-  font-size: 1.5rem;
+.services-content {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 10px;
   margin-bottom: 10px;
 }
-.card-title,
+.card-title{
+  font-size: 2rem;
+  color: #f9fdf8;
+  font-weight: 800;
+}
+
 .list-text {
-  color: black;
+  color: #f9fdf8;
 }
 
 .services-content p {
-  color: #555;
+  color: #f9fdf8;
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 15px;
@@ -110,6 +116,7 @@ h2 {
   padding: 12px 15px;
   border-radius: 30px;
   background-color: #0073E6;
+  background-color: #f9fdf8;
   margin-top: 20px;
   margin-bottom: 40px;
   border: none;
@@ -118,6 +125,12 @@ h2 {
   transition: all 0.3s ease-in-out;
 }
 
+.cta-contact-button-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #070506;
+  text-decoration: none;
+}
 /* ------------------- Grille des services ------------------- */
 .services-grid {
   display: grid;

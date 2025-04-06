@@ -8,6 +8,8 @@
   font-weight: 800;
   margin-bottom: 60px;
   color: #1E1E1E;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 /* Par défaut pour desktop : affichage en ligne */
@@ -29,16 +31,18 @@
   max-width: 600px;
   /* Optionnel : si tu souhaites que le texte reste aligné à gauche sur desktop, supprime text-align: center */
   text-align: left;
+  font-family: 'DM Sans', sans-serif;
+
 }
 
 .why-text h3 {
-  font-size: 2.75rem;
+  font-size: 3.75rem;
   color: #2E83F2;
   margin-bottom: 16px;
 }
 
 .why-text p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #555;
   line-height: 1.6;
 }
@@ -48,7 +52,7 @@
   text-align: center;
 }
 
-.why-img img {
+.why-img img { 
   width: 100%;
   max-width: 500px;
   border-radius: 20px;
