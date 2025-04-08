@@ -6,7 +6,7 @@ export default function HeroSection() {
       <div className="hero-content">
         <div className="Hero-section-Nda-logo">
           <img
-            src="/logo_nda.png"
+            src="/Logo_nda.png"
             alt="Logo NDAStudio"
             className="hero-logo"
           />
