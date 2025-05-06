@@ -28,7 +28,7 @@ export default function HeroSection() {
         </div>
       </div>
       <button className="cta-button">
-        <a className="cta-button-text">Nous contacter maintenant</a>
+        <a href="mailto:rayanwillam.achour@gmail.com" className="cta-button-text">Nous contacter maintenant</a>
       </button>
     </section>
   );

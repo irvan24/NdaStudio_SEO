@@ -43,10 +43,9 @@ const services = [
 
 export default function ServiceSection() {
   return (
-    <section className="services-section">
+    <section id="services" className="services-section">
       <h1 className="services-section-title">Nos services</h1>
 
-      {/* 📌 Section principale - Création et Optimisation de Fiches Google */}
       <div className="services-container">
         <div className="services-content">
           <h3 className="card-title">Création et Optimisation de Fiches Google</h3>
@@ -69,12 +68,8 @@ export default function ServiceSection() {
             <a className="cta-contact-button-text">Nous contacter</a>
           </button>
         </div>
-
-        {/* Images flottantes */}
-       
       </div>
 
-      {/* 📌 Ajout de la grille des services Google My Business */}
       <div className="services-grid">
         {services.map((service, index) => (
           <div key={index} className="service-card">

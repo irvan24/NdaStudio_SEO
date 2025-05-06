@@ -9,7 +9,7 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section className="project-section">
+    <section id="projects" className="project-section">
       <div className="project-header">
         <h1 className="section-title">
           <span className="section-title-black">Nos derniers</span> clients

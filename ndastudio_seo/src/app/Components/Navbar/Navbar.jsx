@@ -21,15 +21,15 @@ export default function Navbar() {
       </div>
       <ul className="nav-links">
         <li className="nav-links-button">
-          <a href="#">Nos projets</a>
+          <a href="#services">Nos sevices</a>
         </li>
         <li className="nav-links-button">
-          <a href="#">Nos services</a>
+          <a href="#pourquoi">Pourquoi</a>
         </li>
       </ul>
       {/* Version desktop : bouton de contact visible */}
       <div className="contact-button desktop-only">
-        <a href="#">Nous contactez</a>
+        <a href="mailto:rayanwillam.achour@gmail.com">Nous contactez</a>
       </div>
       {/* Version mobile : affichage du burger menu */}
       <div className="burger-menu mobile-only" onClick={toggleMenu}>
@@ -41,9 +41,9 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="mobile-dropdown">
           <ul>
-            <li><a href="#">Nos projets</a></li>
-            <li><a href="#">Nos services</a></li>
-            <li><a href="#">Nous contactez</a></li>
+            <li><a href="#services">Nos Services</a></li>
+            <li><a href="#pourquoi">Pourquoi</a></li>
+            <li><a href="mailto:rayanwillam.achour@gmail.com">Nous contactez</a></li>
           </ul>
         </div>
       )}

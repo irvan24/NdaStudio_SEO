@@ -13,20 +13,20 @@ export default function Footer() {
 
         {/* Section centrale - Contact */}
         <div className="footer-contact">
-          <p className="contact-text">📍 Adresse : 123 Rue de l’Agence, Paris</p>
-          <p className="contact-text">📧 Email : <a href="mailto:contact@agence.com">contact@agence.com</a></p>
-          <p className="contact-text">📞 Téléphone : <a href="tel:+33123456789">+33 1 23 45 67 89</a></p>
+          <p className="contact-text">📍 Adresse : 9 boulevard Antoine Giroust, 77600 Bussy St Georges</p>
+          <p className="contact-text">📧 Email : <a href="mailto:contact@agence.com">rayanwillam.achour@gmail.com</a></p>
+          <p className="contact-text">📞 Téléphone : <a href="tel:+33123456789">+33 6 95 74 37 56</a></p>
         </div>
 
         {/* Section droite - Réseaux sociaux */}
         <div className="footer-socials">
-          <a href="https://linkedin.com/company/agence" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/company/ndastudio/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="social-icon linkedin" />
           </a>
-          <a href="https://instagram.com/agence" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/ndastudio.pa?igsh=azQxeWk3MDNnYmg=" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="social-icon instagram" />
           </a>
-          <a href="https://wa.me/33123456789" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/33695743756" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp className="social-icon whatsapp" />
           </a>
         </div>

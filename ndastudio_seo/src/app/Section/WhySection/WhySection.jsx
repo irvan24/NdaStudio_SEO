@@ -26,7 +26,7 @@ const sections = [
 
 const WhySection = () => {
   return (
-    <section className="why-section-split">
+    <section id='pourquoi' className="why-section-split">
       <h2 className="section-title">Pourquoi une fiche Google optimisée ?</h2>
       {sections.map((item, index) => (
         <div className={`why-block ${index % 2 === 1 ? 'reverse' : ''}`} key={index}>
